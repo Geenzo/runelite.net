@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><meta name="google-site-verification" content="_wxrTRAcgx3bHof630x75_YKSXklUH55NkOAA_5GfmU"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><title>1.4.15 Release - RuneLite</title><meta name="description" content="Run energy plugin, friend list counter, team cape plugin improvements and hop-to in chat"><meta name="author" content="Tomas"><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes"></script><script type="text/javascript">!function(i){if(i.search){var l={};i.search.slice(1).split("&").forEach(function(i){var a=i.split("=");l[a[0]]=a.slice(1).join("=").replace(/~and~/g,"&")}),void 0!==l.p&&window.history.replaceState(null,null,i.pathname.slice(0,-1)+(l.p||"")+(l.q?"?"+l.q:"")+i.hash)}}(window.location)</script><link href="/static/css/6.ed9d89f5.chunk.css" rel="stylesheet"><link href="/static/css/main.dc4f3a01.chunk.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/static/css/4.7ba3dd52.chunk.css"><script charset="utf-8" src="/static/js/4.f87b58e3.chunk.js"></script><script charset="utf-8" src="/static/js/56.03331371.chunk.js"></script></head><body><div id="root"><div style="height: 100%;"><div class="fixed-top animated loader" style="display: none;"></div><nav class="navbar navbar-expand-lg fixed-top navbar-dark"><a class="navbar-brand" activeclassname="active" href="/"><img src="/img/runelite_logo_transparent.png" class="icon" alt="RuneLite"> </a><input type="checkbox" id="navbar-check-box"><label for="navbar-check-box" class="navbar-toggler"><span class="navbar-toggler-icon"></span></label><div class="collapse navbar-collapse" id="navbar"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" activeclassname="active" href="/features">Features</a></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/blog">Blog</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/runelite/runelite/wiki">Wiki</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown">API</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="https://static.runelite.net/api/http-service/">RuneLite HTTP API</a><a class="dropdown-item" href="https://static.runelite.net/api/runelite-api/">RuneLite API</a><a class="dropdown-item" href="https://static.runelite.net/api/runelite-client/">RuneLite Client API</a></div></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/tag">Tags</a></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/plugin-hub">Plugin Hub</a></li></ul><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="https://www.patreon.com/runelite">Become a patron</a></li><li class="nav-item"><a class="nav-link nav-icon" href="https://runelite.net/discord" title="Discord"><i class="fab fa-discord"></i><span class="d-lg-none"> Discord</span></a></li><li class="nav-item"><a class="nav-link nav-icon" href="https://twitter.com/RuneLiteClient" title="Twitter"><i class="fab fa-twitter"></i><span class="d-lg-none"> Twitter</span></a></li><li class="nav-item"><a class="nav-link nav-icon" href="https://github.com/runelite" title="GitHub"><i class="fab fa-github"></i><span class="d-lg-none"> GitHub</span></a></li><li class="nav-item"><form class="form-inline"><button class="btn btn-primary" type="button">Login</button></form></li></ul></div></nav><div class="container" id="layout"><section id="blog"><div class="content-section"><h1>1.4.15 Release</h1><p class="text-muted"><span title="Thu Aug 30 2018 10:00:00 GMT+0000 (Coordinated Universal Time)">last year</span> by Tomas</p><div class="markdown-body news-page"><div><p>Run energy plugin was added thanks to <a href="https://github.com/seandewar">@seandewar</a>. This plugin will show tooltip with
+your current weight, how much run time you have remaining and how much time it will take until your run energy fully
+regens. Also it has optional setting for displaying remaining run seconds instead of run percentage in the run energy
+bar.</p>
+<p><img src="/img/blog/1.4.15-Release/runenergy1.png" alt="runenergy1">
+<img src="/img/blog/1.4.15-Release/runenergy2.png" alt="runenergy2"></p>
+<p>Thanks to work of <a href="https://github.com/forsco">@forsco</a> and <a href="https://github.com/Adam-">@Adam-</a> friend and ignore list
+counter has been added, that will simply show max amount and used amount of friends/ignored players in the respective
+interfaces.</p>
+<p><img src="/img/blog/1.4.15-Release/friendlist.png" alt="friendlist"></p>
+<p><a href="https://github.com/ItsSebas">@ItsSebas</a> improved team capes plugin interface to display team cape icons with counts
+instead of text in panel. This new design should be more compact and less intrusive than old one (and also looks way
+better!).</p>
+<p><img src="/img/blog/1.4.15-Release/teamcapes.png" alt="teamcapes"></p>
+<p>The world hopper plugin now has support for hopping to people in chat via right-click menu thanks to
+<a href="https://github.com/Retoxified">@Retoxified</a>:</p>
+<p><img src="/img/blog/1.4.15-Release/hopto.png" alt="hopto"></p>
+<p>Loose railing shortcut near Tree Gnome Village highlighting has been added to agility plugin thanks to
+<a href="https://github.com/ItsSebas">@ItsSebas</a>:</p>
+<p><img src="/img/blog/1.4.15-Release/looserailing.png" alt="looserailing"></p>
+<p>There are also several smaller improvements and bug fixes, including:</p>
+<ul>
+<li>The idle notifier plugin has been significantly improved, now it should not throw false warnings while
+in combat or when doing activity that is using same animations as some of the animations that display
+idle warning</li>
+<li>Barrows kill count chat message will now properly update the !kc data</li>
+<li>Time tracking plugin now also has "Special patches" in the overview tab</li>
+<li>Teleblock timers are now removed on logout</li>
+<li>Corp plugin now has option to hide the damage overlay</li>
+<li>"Pause all" menu option has been added to XP tracker right-click menu</li>
+</ul>
+<p>Enjoy!</p>
+<p>- Tomas</p>
+<h3 id="new-commits">New commits</h3>
+<p>We had 12 contributors this release!</p>
+<pre><code>Adam (9):
+      Fix friend and ignore widget id changes
+      http service: improve update detection logic
+      runelite-api: add method for getting number of friends
+      Add Ignore API
+      runelite-client: add friend list plugin
+      widget id: update bottom line stones widget ids
+      woodcutting plugin: fix npe rendering redwood trees if axe is null
+      Revert "Merge pull request #4568 from deathbeam/proper-shutdown"
+      Update sprite ids and overrides
+
+DannysPVM (1):
+      Add camera setters to Client.java and RSClient.java.
+
+Karolcz125 (1):
+      Add LMS to ignored type in WorldHopper (#5139)
+
+Max Weber (1):
+      Update Scripts to 2018-08-30-rev174
+
+Michael Goodwin (1):
+      Fix Hot/Cold Nardah Genie Cave location
+
+Retoxified (1):
+      Add Hop-To option in chat
+
+Robbe De Neve (2):
+      Add special patches to overview tab
+      Add pause all button to xp tracker (#5126)
+
+Ron Young (2):
+      corp: hide damage overlay
+      Reduce world map icon sizes (#5086)
+
+RuneLite Cache-Code Autoupdater (3):
+      Update Item IDs to 2018-08-30-rev174
+      Update Object IDs to 2018-08-30-rev174
+      Update Widget IDs to 2018-08-30-rev174
+
+Sean Dewar (1):
+      Add run energy plugin
+
+Sebastiaan (2):
+      Add Tree Gnome Village loose railing shortcut (#5093)
+      Make teleblock timers disappear on logout/hop (#5090)
+
+Sebastiaan Vanspauwen (1):
+      Teamcapes plugin: Teamcape image instead of text (#5107)
+
+Tomas Slusny (10):
+      Add exports for GameEngine#shutDown
+      Properly shutdown everything on window close
+      Stop plugins on shutdown
+      Reset idle timers when player clicks in-game
+      Properly reset idle timers on logout and login
+      Make animation idle remember last animating ID
+      Make combat idle notifier use interacting changed
+      Add idle notifier plugin tests
+      Remove dupe PVP_HR entry in world hopper
+      Fix setting of barrows kc from chat
+</code></pre></div></div></div></section><section><div class="content-section"><footer><hr>Developed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> using <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://reactjs.org/">React</a> and <a href="https://fontawesome.com/">Font Awesome</a><a href="http://localhost:8000/atom.xml" class="float-right"><i class="fas fa-rss"></i> Subscribe via RSS</a></footer></div></section></div></div></div><script>!function(o){function e(e){for(var f,c,d=e[0],t=e[1],r=e[2],a=0,n=[];a<d.length;a++)c=d[a],Object.prototype.hasOwnProperty.call(l,c)&&l[c]&&n.push(l[c][0]),l[c]=0;for(f in t)Object.prototype.hasOwnProperty.call(t,f)&&(o[f]=t[f]);for(p&&p(e);n.length;)n.shift()();return u.push.apply(u,r||[]),b()}function b(){for(var e,f=0;f<u.length;f++){for(var c=u[f],d=!0,t=1;t<c.length;t++){var r=c[t];0!==l[r]&&(d=!1)}d&&(u.splice(f--,1),e=s(s.s=c[0]))}return e}var c={},i={1:0},l={1:0},u=[];function s(e){if(c[e])return c[e].exports;var f=c[e]={i:e,l:!1,exports:{}};return o[e].call(f.exports,f,f.exports,s),f.l=!0,f.exports}s.e=function(u){var e=[];i[u]?e.push(i[u]):0!==i[u]&&{3:1,4:1,5:1,7:1,8:1,9:1,10:1,11:1,12:1,13:1,14:1,15:1}[u]&&e.push(i[u]=new Promise(function(e,d){for(var f="static/css/"+({}[u]||u)+"."+{2:"31d6cfe0",3:"24456d67",4:"7ba3dd52",5:"7ba3dd52",7:"e48ccbec",8:"7105c3bd",9:"4f9f09ec",10:"5c8ca950",11:"dfbc3683",12:"d5dee77a",13:"ff58d5af",14:"aabfbf21",15:"cdc15f6f",16:"31d6cfe0",17:"31d6cfe0",18:"31d6cfe0",19:"31d6cfe0",20:"31d6cfe0",21:"31d6cfe0",22:"31d6cfe0",23:"31d6cfe0",24:"31d6cfe0",25:"31d6cfe0",26:"31d6cfe0",27:"31d6cfe0",28:"31d6cfe0",29:"31d6cfe0",30:"31d6cfe0",31:"31d6cfe0",32:"31d6cfe0",33:"31d6cfe0",34:"31d6cfe0",35:"31d6cfe0",36:"31d6cfe0",37:"31d6cfe0",38:"31d6cfe0",39:"31d6cfe0",40:"31d6cfe0",41:"31d6cfe0",42:"31d6cfe0",43:"31d6cfe0",44:"31d6cfe0",45:"31d6cfe0",46:"31d6cfe0",47:"31d6cfe0",48:"31d6cfe0",49:"31d6cfe0",50:"31d6cfe0",51:"31d6cfe0",52:"31d6cfe0",53:"31d6cfe0",54:"31d6cfe0",55:"31d6cfe0",56:"31d6cfe0",57:"31d6cfe0",58:"31d6cfe0",59:"31d6cfe0",60:"31d6cfe0",61:"31d6cfe0",62:"31d6cfe0",63:"31d6cfe0",64:"31d6cfe0",65:"31d6cfe0",66:"31d6cfe0",67:"31d6cfe0",68:"31d6cfe0",69:"31d6cfe0",70:"31d6cfe0",71:"31d6cfe0",72:"31d6cfe0",73:"31d6cfe0",74:"31d6cfe0",75:"31d6cfe0",76:"31d6cfe0",77:"31d6cfe0",78:"31d6cfe0",79:"31d6cfe0",80:"31d6cfe0",81:"31d6cfe0",82:"31d6cfe0",83:"31d6cfe0",84:"31d6cfe0",85:"31d6cfe0",86:"31d6cfe0",87:"31d6cfe0",88:"31d6cfe0",89:"31d6cfe0",90:"31d6cfe0",91:"31d6cfe0",92:"31d6cfe0",93:"31d6cfe0",94:"31d6cfe0",95:"31d6cfe0",96:"31d6cfe0",97:"31d6cfe0",98:"31d6cfe0",99:"31d6cfe0",100:"31d6cfe0",101:"31d6cfe0",102:"31d6cfe0",103:"31d6cfe0",104:"31d6cfe0",105:"31d6cfe0",106:"31d6cfe0",107:"31d6cfe0",108:"31d6cfe0",109:"31d6cfe0",110:"31d6cfe0",111:"31d6cfe0",112:"31d6cfe0",113:"31d6cfe0",114:"31d6cfe0",115:"31d6cfe0",116:"31d6cfe0",117:"31d6cfe0"}[u]+".chunk.css",t=s.p+f,c=document.getElementsByTagName("link"),r=0;r<c.length;r++){var a=(o=c[r]).getAttribute("data-href")||o.getAttribute("href");if("stylesheet"===o.rel&&(a===f||a===t))return e()}var n=document.getElementsByTagName("style");for(r=0;r<n.length;r++){var o;if((a=(o=n[r]).getAttribute("data-href"))===f||a===t)return e()}var b=document.createElement("link");b.rel="stylesheet",b.type="text/css",b.onload=e,b.onerror=function(e){var f=e&&e.target&&e.target.src||t,c=new Error("Loading CSS chunk "+u+" failed.\n("+f+")");c.code="CSS_CHUNK_LOAD_FAILED",c.request=f,delete i[u],b.parentNode.removeChild(b),d(c)},b.href=t,document.getElementsByTagName("head")[0].appendChild(b)}).then(function(){i[u]=0}));var c=l[u];if(0!==c)if(c)e.push(c[2]);else{var f=new Promise(function(e,f){c=l[u]=[e,f]});e.push(c[2]=f);var d,t=document.createElement("script");t.charset="utf-8",t.timeout=120,s.nc&&t.setAttribute("nonce",s.nc),t.src=s.p+"static/js/"+({}[u]||u)+"."+{2:"ddb6dbaf",3:"b7fac3ee",4:"f87b58e3",5:"15223f50",7:"4fbae076",8:"c75e238d",9:"f1fca423",10:"a9f38736",11:"6d7ac7e5",12:"f90b0b48",13:"1d27da54",14:"b0f788a1",15:"dccd22b9",16:"1014e5d4",17:"75f4f87b",18:"b992f799",19:"e92a131a",20:"bdf8ff47",21:"19de4278",22:"4ee1cdb1",23:"0123753a",24:"d6540f04",25:"961b1744",26:"b7c478ad",27:"c9c74f9f",28:"2f5b7fee",29:"e718a96f",30:"9e07e214",31:"f2c30550",32:"f85adf2f",33:"1896f0f7",34:"52184c4b",35:"693311d9",36:"f4fab5e7",37:"1a6eeb1b",38:"3730beea",39:"a9c4cef8",40:"d2df48f7",41:"018c7efd",42:"6b5d1180",43:"5ec5ecfc",44:"2df7d875",45:"f30e3508",46:"9d19cf11",47:"92f74054",48:"289d65ed",49:"216eaa60",50:"49a13a4a",51:"50bf22ff",52:"a35ed826",53:"dbdb03ba",54:"61583411",55:"6bdb31d1",56:"03331371",57:"36c01c43",58:"b36f87e5",59:"22cce297",60:"7816b1b2",61:"a61fd37d",62:"51461c49",63:"6b39e66b",64:"e58be4b0",65:"70037316",66:"03347707",67:"d397fe80",68:"3e0b5eae",69:"6328fb6a",70:"a4d9b889",71:"c4d56733",72:"76dcafba",73:"e67b9ad7",74:"3fd38372",75:"93458a79",76:"443b6862",77:"e2bebee4",78:"58476e0b",79:"aeef90d4",80:"732c9535",81:"64b33742",82:"b4cfe9a0",83:"377bf2b5",84:"7fe760e0",85:"6cf82853",86:"0ced5b53",87:"dd6c0f99",88:"a55e6477",89:"fe5ed078",90:"197d90f1",91:"f73179a7",92:"eff0e38d",93:"7f2802e1",94:"1408e110",95:"0e4d4362",96:"0ea89f0c",97:"97ca48f7",98:"fb814336",99:"5f6fcd50",100:"f7c1627f",101:"ab0e314b",102:"d446c8df",103:"8ae5ad63",104:"e7b02bb8",105:"79333d92",106:"c0811130",107:"99bd5f63",108:"3d02c3f5",109:"f1ac4e0c",110:"1e6e6c48",111:"c840653a",112:"14fda8ab",113:"dc2224e0",114:"42ff5f3c",115:"f925234f",116:"a7bbcc28",117:"45a7c109"}[u]+".chunk.js";var r=new Error;d=function(e){t.onerror=t.onload=null,clearTimeout(a);var f=l[u];if(0!==f){if(f){var c=e&&("load"===e.type?"missing":e.type),d=e&&e.target&&e.target.src;r.message="Loading chunk "+u+" failed.\n("+c+": "+d+")",r.name="ChunkLoadError",r.type=c,r.request=d,f[1](r)}l[u]=void 0}};var a=setTimeout(function(){d({type:"timeout",target:t})},12e4);t.onerror=t.onload=d,document.head.appendChild(t)}return Promise.all(e)},s.m=o,s.c=c,s.d=function(e,f,c){s.o(e,f)||Object.defineProperty(e,f,{enumerable:!0,get:c})},s.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},s.t=function(f,e){if(1&e&&(f=s(f)),8&e)return f;if(4&e&&"object"==typeof f&&f&&f.__esModule)return f;var c=Object.create(null);if(s.r(c),Object.defineProperty(c,"default",{enumerable:!0,value:f}),2&e&&"string"!=typeof f)for(var d in f)s.d(c,d,function(e){return f[e]}.bind(null,d));return c},s.n=function(e){var f=e&&e.__esModule?function(){return e.default}:function(){return e};return s.d(f,"a",f),f},s.o=function(e,f){return Object.prototype.hasOwnProperty.call(e,f)},s.p="/",s.oe=function(e){throw console.error(e),e};var f=this["webpackJsonprunelite.net"]=this["webpackJsonprunelite.net"]||[],d=f.push.bind(f);f.push=e,f=f.slice();for(var t=0;t<f.length;t++)e(f[t]);var p=d;b()}([])</script><script src="/static/js/6.9500bada.chunk.js"></script><script src="/static/js/main.689d2e0b.chunk.js"></script></body></html>
